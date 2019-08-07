@@ -8,13 +8,14 @@ import { SecondComponentComponent } from './second-component/second-component.co
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { SizerDirective } from './directives/sizer.directive';
+import { FooterComponent } from './pricing/footer-container/footer/footer.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { NavComponent } from './pricing/nav/nav.component';
-import { InfoComponent } from './pricing/info/info.component';
 import { CardContainerComponent } from './pricing/card-container/card-container.component';
-import { CardComponent } from './pricing/cardContainer/card/card.component';
+import { InfoComponent } from './pricing/info/info.component';
+import { CardComponent } from './pricing/card-container/card/card.component';
 import { FooterContainerComponent } from './pricing/footer-container/footer-container.component';
-import { FooterComponent } from './pricing/footerContainer/footer/footer.component';
+
 
 @NgModule({
   declarations: [
