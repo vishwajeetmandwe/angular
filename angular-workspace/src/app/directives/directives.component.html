@@ -1,0 +1,23 @@
+<div class="row-m-1">
+    <div class="col-md-12">
+        <p class="alert alert-info">
+            alert  information
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <p [ngStyle] = "st" class="p-1">
+            Attribute directives—change the appearance or behavior of an element, component, or another directive.
+        </p>
+        <p [ngClass]="{alert : true, 'alert-info' : true, border : true, 'border-primary' : true}">
+            Attribute directives—change the appearance or behavior of an element, component, or another directive.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <input type="text" [appSizer]= "{wd : 100, bkCl : 'red', fgCl : 'yellow'}" placeholder="vishwajeet">
+    </div>
+</div>
