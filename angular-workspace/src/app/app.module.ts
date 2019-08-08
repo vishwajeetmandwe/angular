@@ -20,6 +20,9 @@ import { ServiceComponent } from './service/service.component';
 import { Comp1Component } from './service/comp1/comp1.component';
 import { Comp2Component } from './service/comp2/comp2.component';
 import { CustRegService } from './service/cust-reg.service';
+import { ProgressComponent } from './service/progress/progress.component';
+import { BtnsComponent } from './service/progress/btns.component';
+import { ProgBarComponent } from './service/progress/prog-bar.component';
 
 
 @NgModule({
@@ -41,7 +44,10 @@ import { CustRegService } from './service/cust-reg.service';
     CustomComponent,
     ServiceComponent,
     Comp1Component,
-    Comp2Component
+    Comp2Component,
+    ProgressComponent,
+    ProgBarComponent,
+    BtnsComponent
   ],
   imports: [
     BrowserModule
