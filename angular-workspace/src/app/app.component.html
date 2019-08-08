@@ -1,4 +1,10 @@
     
 <div class="container">
-  <app-pricing></app-pricing>
+
+    <input [type]="'text'" (click)="myClk($event)" [value]="e?.txt">
+
+  <app-custom
+  [alTxt]="txt"
+  (clicked)="customComponentClicked($event)"></app-custom>
+  
 </div>

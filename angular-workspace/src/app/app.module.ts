@@ -15,6 +15,7 @@ import { CardContainerComponent } from './pricing/card-container/card-container.
 import { InfoComponent } from './pricing/info/info.component';
 import { CardComponent } from './pricing/card-container/card/card.component';
 import { FooterContainerComponent } from './pricing/footer-container/footer-container.component';
+import { CustomComponent } from './custom/custom.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { FooterContainerComponent } from './pricing/footer-container/footer-cont
     CardContainerComponent,
     CardComponent,
     FooterContainerComponent,
-    FooterComponent
+    FooterComponent,
+    CustomComponent
   ],
   imports: [
     BrowserModule

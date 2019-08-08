@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Evdt } from './custom/Evdt';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-workspace';
+  txt = 'Image result for angular componentsangular.io Components are the most basic building block of an UI in an Angular application. An Angular application is a tree of Angular components.'
+  e : Evdt
+  customComponentClicked(e: Evdt) {
+    this.e = e 
+    console.log(e.txt)
+  }
+  
 }
