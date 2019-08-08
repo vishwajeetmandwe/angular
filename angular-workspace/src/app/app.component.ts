@@ -14,5 +14,7 @@ export class AppComponent {
     this.e = e 
     console.log(e.txt)
   }
-  
+  functionClick(e : string){
+    this.txt = e
+  } 
 }

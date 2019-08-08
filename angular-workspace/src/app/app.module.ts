@@ -16,6 +16,10 @@ import { InfoComponent } from './pricing/info/info.component';
 import { CardComponent } from './pricing/card-container/card/card.component';
 import { FooterContainerComponent } from './pricing/footer-container/footer-container.component';
 import { CustomComponent } from './custom/custom.component';
+import { ServiceComponent } from './service/service.component';
+import { Comp1Component } from './service/comp1/comp1.component';
+import { Comp2Component } from './service/comp2/comp2.component';
+import { CustRegService } from './service/cust-reg.service';
 
 
 @NgModule({
@@ -34,12 +38,15 @@ import { CustomComponent } from './custom/custom.component';
     CardComponent,
     FooterContainerComponent,
     FooterComponent,
-    CustomComponent
+    CustomComponent,
+    ServiceComponent,
+    Comp1Component,
+    Comp2Component
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [CustRegService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
