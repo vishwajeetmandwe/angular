@@ -5,18 +5,23 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ResourcesModule } from './resources/resources.module';
-import { EventsModule } from './events/events.module';
+import { EventPageComponent } from './event/event-page/event-page.component';
+import { EventModule } from './event/event.module';
+import { NavModule } from './nav/nav.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    EventsModule,
+    EventModule,
     BlogModule,
-    ResourcesModule
+    ResourcesModule,
+    NavModule
   
   ],
   providers: [],
