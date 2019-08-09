@@ -1,3 +1,4 @@
+import { ProgressService } from './progress.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProgBarComponent implements OnInit {
 
-  constructor() { }
+  private progress : number = 0
+  constructor(
+    private progressService : ProgressService
+  ) { }
 
+  
   ngOnInit() {
+    this.progressService.onProgressEvent(ps => this.progress = ps)
   }
 
 }

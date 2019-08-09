@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, EventEmitter } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -6,6 +6,9 @@ import { Injectable } from '@angular/core';
 export class ProgressService {
 
   private progress :number = 0
+
+  private em : EventEmitter<number> = new EventEmitter()
+
   constructor() { }
 
   makeProgress(isNeg : boolean){
@@ -18,5 +21,9 @@ export class ProgressService {
       this.progress += 5
       console.log(this.progress)
     }
+    this.em.emit(this.progress)
+  }
+  onProgressEvent(fn: (progress : number) => void){
+    this.em.subscribe(fn)
   }
 }
