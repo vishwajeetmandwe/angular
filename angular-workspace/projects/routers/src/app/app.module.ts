@@ -1,3 +1,5 @@
+import { LoginModule } from './login/login.module';
+import { DashModule } from './dash/dash.module';
 import { BlogModule } from './blog/blog.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -21,7 +23,9 @@ import { NavModule } from './nav/nav.module';
     EventModule,
     BlogModule,
     ResourcesModule,
-    NavModule
+    NavModule,
+    DashModule,
+    LoginModule
   
   ],
   providers: [],
