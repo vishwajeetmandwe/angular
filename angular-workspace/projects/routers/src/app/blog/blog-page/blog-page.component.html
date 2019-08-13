@@ -1,4 +1,4 @@
-<form class="form-horizontal" [formGroup]="fg" (ngSubmit)="onSub()">
+<form class="form-horizontal" [formGroup]="fg" (ngSubmit)="onSub(conPass.value)">
     <fieldset>
         <div class="control-group">
             <!-- Username -->
@@ -30,7 +30,7 @@
 
         <div class="control-group">
             <!-- Password -->
-            <label class="control-label" for="password_confirm" #confPass>Password (Confirm)</label>
+            <label #conPass class="control-label" for="password_confirm" #confPass>Password (Confirm)</label>
             <div class="controls">
                 <input type="password" name="password_confirm" placeholder=""
                     class="input-xlarge">
@@ -45,4 +45,6 @@
             </div>
         </div>
     </fieldset>
+
+    
 </form>

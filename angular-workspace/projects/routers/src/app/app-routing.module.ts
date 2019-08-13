@@ -6,15 +6,22 @@ import { Routes, RouterModule } from '@angular/router';
 import { EventPageComponent } from './event/event-page/event-page.component';
 import { RessourcePageComponent } from './resources/ressource-page/ressource-page.component';
 
-const dashRoutes: Routes= [
-  {path:'blog', component: BlogPageComponent},
-  {path:'event', component: EventPageComponent},
-  {path:'ressource', component: RessourcePageComponent}
-]
-const routes: Routes = [
-  {path:'', component: LoginPageComponent},
-  {path:'dash', component: DashPageComponent, children:dashRoutes},
-];
+
+
+
+
+
+// It is working without lazy loading
+
+// const dashRoutes: Routes= [
+//   {path:'blog', component: BlogPageComponent},
+//   {path:'event', component: EventPageComponent},
+//   {path:'ressource', component: RessourcePageComponent}
+// ]
+// const routes: Routes = [
+//   {path:'', component: LoginPageComponent},
+//   {path:'dash', component: DashPageComponent, children:dashRoutes},
+// ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

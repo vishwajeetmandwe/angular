@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { LoginModule } from './login/login.module';
 import { DashModule } from './dash/dash.module';
 import { BlogModule } from './blog/blog.module';
@@ -25,7 +26,8 @@ import { NavModule } from './nav/nav.module';
     ResourcesModule,
     NavModule,
     DashModule,
-    LoginModule
+    LoginModule,
+    HttpClientModule
   
   ],
   providers: [],
